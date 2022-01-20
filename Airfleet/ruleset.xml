@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<ruleset name="Airfleet WordPress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+  <description>Airfleet coding standards for WordPress.</description>
+
+  <!--
+    #############################################################################
+    COMMAND LINE ARGUMENTS
+    https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
+    #############################################################################
+	-->
+
+  <!-- Pass some flags to PHPCS: p flag: Show progress of the run. s flag: Show sniff codes in all reports. -->
+  <arg value="ps"/>
+
+  <!-- Check PHP files only. JavaScript and CSS files are checked separately using the @wordpress/scripts package. -->
+  <arg name="extensions" value="php"/>
+
+  <!-- Show colored output -->
+  <arg name="colors"/>
+
+  <!-- Set report type -->
+  <arg name="report" value="full,summary"/>
+
+  <!-- Set report width -->
+  <arg name="report-width" value="120"/>
+
+  <!-- Exclude WP Core folders and files from being checked. -->
+  <exclude-pattern>/docroot/wp-admin/*</exclude-pattern>
+  <exclude-pattern>/docroot/wp-includes/*</exclude-pattern>
+  <exclude-pattern>/docroot/wp-*.php</exclude-pattern>
+  <exclude-pattern>/docroot/index.php</exclude-pattern>
+  <exclude-pattern>/docroot/xmlrpc.php</exclude-pattern>
+  <exclude-pattern>/docroot/wp-content/plugins/*</exclude-pattern>
+
+  <!-- Exclude the Composer Vendor directory. -->
+  <exclude-pattern>/vendor/*</exclude-pattern>
+
+  <!-- Exclude the Node Modules directory. -->
+  <exclude-pattern>/node_modules/*</exclude-pattern>
+
+  <!-- Exclude minified Javascript files. -->
+  <exclude-pattern>*.min.js</exclude-pattern>
+
+  <!-- Custom exclude. -->
+  <exclude-pattern>/assets/*</exclude-pattern>
+  <exclude-pattern>/dist/*</exclude-pattern>
+  <exclude-pattern>/.parcel-cache/*</exclude-pattern>
+  <exclude-pattern>/.husky/*</exclude-pattern>
+  <exclude-pattern>*/*.css</exclude-pattern>
+  <exclude-pattern>*/*.js</exclude-pattern>
+
+  <!-- Include the WordPress-Core standard. -->
+  <rule ref="WordPress-Core">
+		<exclude name="WordPress.Files.FileName" />
+		<exclude name="Generic.CodeAnalysis.UnusedFunctionParameter" />
+		<exclude name="WordPress.PHP.DisallowShortTernary.Found" />
+    <exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+  </rule>
+
+  <!-- Include the WordPress-Extra standard. -->
+  <rule ref="WordPress-Extra" />
+
+  <!--
+    Neutron
+    https://github.com/Automattic/phpcs-neutron-ruleset
+    https://github.com/Automattic/phpcs-neutron-standard
+  -->
+  <rule ref="NeutronRuleset">
+		<exclude name="NeutronStandard.StrictTypes.RequireStrictTypes.StrictTypes" />
+    <exclude name="NeutronStandard.Constants.DisallowDefine.Define" />
+    <exclude name="ImportDetection.Imports.RequireImports.Symbol" />
+
+    <!--
+      VariableAnalysis options
+      See https://github.com/sirbrillig/phpcs-variable-analysis
+    -->
+    <properties>
+      <property name="validUndefinedVariableNames" value="block"/>
+      <property name="validUnusedVariableNames" value="container"/>
+      <property name="allowWordPressPassByRefFunctions" value="true"/>
+    </properties>
+  </rule>
+
+  <!-- Add in some extra rules from other standards. -->
+  <rule ref="Generic.Commenting.Todo"/>
+
+  <!-- Check for PHP cross-version compatibility. -->
+  <!--
+    To enable this, the PHPCompatibilityWP standard needs
+    to be installed.
+    See the readme for installation instructions:
+    https://github.com/PHPCompatibility/PHPCompatibilityWP
+    For more information, also see:
+    https://github.com/PHPCompatibility/PHPCompatibility
+	-->
+  <config name="testVersion" value="8.1-"/>
+
+  <rule ref="PHPCompatibilityWP">
+    <include-pattern>*\.php$</include-pattern>
+  </rule>
+
+  <!--
+	To get the optimal benefits of using WPCS, we should add a couple of
+	custom properties.
+	Adjust the values of these properties to fit our needs.
+	For information on additional custom properties available, check out
+	the wiki:
+	https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
+	-->
+  <config name="minimum_supported_wp_version" value="5.8"/>
+
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="airfleet"/>
+      </property>
+    </properties>
+  </rule>
+
+  <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+    <properties>
+      <property name="prefixes" type="array">
+        <element value="airfleet"/>
+      </property>
+    </properties>
+  </rule>
+
+  <rule ref="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound">
+    <exclude-pattern>blocks/*</exclude-pattern>
+    <exclude-pattern>components/*</exclude-pattern>
+    <exclude-pattern>templates/*</exclude-pattern>
+    <exclude-pattern>partials/*</exclude-pattern>
+    <exclude-pattern>template-parts/*</exclude-pattern>
+    <exclude-pattern>views/*</exclude-pattern>
+  </rule>
+
+</ruleset>

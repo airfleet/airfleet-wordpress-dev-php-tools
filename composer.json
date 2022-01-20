@@ -1,0 +1,23 @@
+{
+  "name": "airfleet/wordpress-dev",
+  "type": "phpcodesniffer-standard",
+  "description": "Airfleet development tools for WordPress",
+  "authors": [
+    {
+      "name": "Airfleet",
+      "email": "dev@airfleet.co"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "squizlabs/php_codesniffer": "^3.6",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "wp-coding-standards/wpcs": "^2.3",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "automattic/phpcs-neutron-ruleset": "^3.4"
+  },
+  "extra": {
+    "phpcodesniffer-search-depth": 5
+  }
+}

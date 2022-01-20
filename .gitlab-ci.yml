@@ -1,0 +1,8 @@
+stages:
+  - release
+
+include:
+  # Release process
+  - project: 'codersclan/tools/gitlab-ci-templates'
+    ref: main
+    file: '/release/gitlab.yaml'
