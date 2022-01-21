@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.0] - 2022-01-21
+
 ### Changed
 
 - Push major version for better Composer support
@@ -19,5 +21,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add phpcs and config
 
 
-[Unreleased]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/0.1.0...main
+[Unreleased]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/1.0.0...main
+[1.0.0]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/0.1.0...1.0.0
 [0.1.0]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/null...0.1.0
