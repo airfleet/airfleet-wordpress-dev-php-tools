@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.0.0] - 2022-02-08
+
 ### Changed
 
 - Allow forward slash (/) in hook names
@@ -25,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add phpcs and config
 
 
-[Unreleased]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/1.0.0...main
+[Unreleased]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/2.0.0...main
+[2.0.0]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/1.0.0...2.0.0
 [1.0.0]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/0.1.0...1.0.0
 [0.1.0]: https://gitlab.com/codersclan/tools/airfleet-wordpress-dev-php-tools/compare/null...0.1.0
