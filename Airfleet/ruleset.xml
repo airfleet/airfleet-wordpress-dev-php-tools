@@ -135,4 +135,10 @@
     <exclude-pattern>views/*</exclude-pattern>
   </rule>
 
+  <rule ref="WordPress.NamingConventions.ValidHookName">
+    <properties>
+      <property name="additionalWordDelimiters" value="/"/>
+    </properties>
+  </rule>
+
 </ruleset>
