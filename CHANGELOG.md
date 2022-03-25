@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Disable rule Internal.NoCodeFound for Blade files
+
 ## [2.0.0] - 2022-02-08
 
 ### Changed
