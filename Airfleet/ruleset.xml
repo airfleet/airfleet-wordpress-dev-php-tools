@@ -145,4 +145,9 @@
       <exclude-pattern>*.blade.php</exclude-pattern>
   </rule>
 
+  <rule ref="WordPress">
+    <exclude name="WordPress.WP.I18n" />
+    <exclude name="WordPress.NamingConventions.PrefixAllGlobals" />
+  </rule>
+
 </ruleset>
