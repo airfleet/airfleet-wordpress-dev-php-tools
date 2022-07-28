@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Disable rule WordPress.WP.I18n
+- Disable rule WordPress.NamingConventions.PrefixAllGlobals
+
 ## [2.0.1] - 2022-03-25
 
 ### Fixed
