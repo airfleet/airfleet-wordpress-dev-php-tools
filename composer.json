@@ -19,5 +19,10 @@
   },
   "extra": {
     "phpcodesniffer-search-depth": 5
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
