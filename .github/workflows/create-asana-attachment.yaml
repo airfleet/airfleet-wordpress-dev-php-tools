@@ -7,6 +7,7 @@ on:
 jobs:
   create-asana-attachment-job:
     runs-on: ubuntu-latest
+    timeout-minutes: 1
     name: Create pull request attachments on Asana tasks
     steps:
       - name: Create pull request attachments
