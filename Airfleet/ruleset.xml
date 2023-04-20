@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Airfleet WordPress" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+<ruleset name="Airfleet WordPress"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
   <description>Airfleet coding standards for WordPress.</description>
 
@@ -52,9 +53,9 @@
 
   <!-- Include the WordPress-Core standard. -->
   <rule ref="WordPress-Core">
-		<exclude name="WordPress.Files.FileName" />
-		<exclude name="Generic.CodeAnalysis.UnusedFunctionParameter" />
-		<exclude name="WordPress.PHP.DisallowShortTernary.Found" />
+    <exclude name="WordPress.Files.FileName" />
+    <exclude name="Generic.CodeAnalysis.UnusedFunctionParameter" />
+    <exclude name="WordPress.PHP.DisallowShortTernary.Found" />
     <exclude name="WordPress.PHP.YodaConditions.NotYoda" />
   </rule>
 
@@ -62,19 +63,10 @@
   <rule ref="WordPress-Extra" />
 
   <!--
-    Neutron
-    https://github.com/Automattic/phpcs-neutron-ruleset
-    https://github.com/Automattic/phpcs-neutron-standard
+    VariableAnalysis options
+    See https://github.com/sirbrillig/phpcs-variable-analysis
   -->
-  <rule ref="NeutronRuleset">
-		<exclude name="NeutronStandard.StrictTypes.RequireStrictTypes.StrictTypes" />
-    <exclude name="NeutronStandard.Constants.DisallowDefine.Define" />
-    <exclude name="ImportDetection.Imports.RequireImports.Symbol" />
-
-    <!--
-      VariableAnalysis options
-      See https://github.com/sirbrillig/phpcs-variable-analysis
-    -->
+  <rule ref="VariableAnalysis">
     <properties>
       <property name="validUndefinedVariableNames" value="block"/>
       <property name="validUnusedVariableNames" value="container"/>
@@ -108,7 +100,7 @@
 	the wiki:
 	https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
 	-->
-  <config name="minimum_supported_wp_version" value="5.8"/>
+  <config name="minimum_supported_wp_version" value="6.0"/>
 
   <rule ref="WordPress.WP.I18n">
     <properties>
@@ -142,12 +134,90 @@
   </rule>
 
   <rule ref="Internal.NoCodeFound">
-      <exclude-pattern>*.blade.php</exclude-pattern>
+    <exclude-pattern>*.blade.php</exclude-pattern>
   </rule>
 
   <rule ref="WordPress">
     <exclude name="WordPress.WP.I18n" />
     <exclude name="WordPress.NamingConventions.PrefixAllGlobals" />
+  </rule>
+
+  <!-- Allow short ternary -->
+  <rule ref="Universal.Operators">
+    <exclude name="Universal.Operators.DisallowShortTernary.Found"/>
+  </rule>
+
+  <!-- Export from Neutron ruleset -->
+  <rule ref="Squiz.Commenting">
+    <severity>0</severity>
+  </rule>
+  <rule ref="PEAR.Functions.FunctionCallSignature.MultipleArguments">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Generic.Commenting.DocComment.SpacingBeforeTags">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.Files.FileName">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.PHP.DevelopmentFunctions">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Generic.Formatting.MultipleStatementAlignment.NotSameWarning">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Generic.Commenting.DocComment.MissingShort">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.PHP.YodaConditions.NotYoda">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie.ContentAfterBrace">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterCloseParenthesis">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound">
+    <type>warning</type>
+  </rule>
+  <rule ref="WordPress.DB.DirectDatabaseQuery.NoCaching">
+    <severity>0</severity>
+  </rule>
+  <rule ref="VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable">
+    <type>error</type>
+  </rule>
+  <rule ref="VariableAnalysis.CodeAnalysis.VariableAnalysis">
+    <properties>
+      <property name="allowUnusedCaughtExceptions" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="WordPress.PHP.StrictInArray.MissingTrueStrict">
+    <type>error</type>
+  </rule>
+  <rule ref="WordPress.DB.DirectDatabaseQuery.DirectQuery">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.DB.PreparedSQL.NotPrepared">
+    <type>warning</type>
+  </rule>
+  <rule ref="WordPress.Security.EscapeOutput.OutputNotEscaped">
+    <severity>0</severity>
+  </rule>
+  <rule ref="WordPress.PHP.DevelopmentFunctions.error_log_var_export">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Generic.Arrays.DisallowShortArraySyntax">
+    <severity>0</severity>
+  </rule>
+  <rule ref="Universal.Arrays.DisallowShortArraySyntax.Found">
+    <severity>0</severity>
   </rule>
 
 </ruleset>

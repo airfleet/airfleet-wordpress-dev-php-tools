@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added 
+
+- Added dependency phpcsstandards/phpcsutils (without it, phpcs errors out)
+
+### Changed
+
+- Updated dependency squizlabs/php_codesniffer to 3.7.2
+- Updated dependency dealerdirect/phpcodesniffer-composer-installer to 1.0.0
+- Updated dependency wp-coding-standards/wpcs to dev-develop
+- Updated dependency phpcompatibility/php-compatibility to 9.3.5
+- Updated dependency phpcompatibility/phpcompatibility-wp to 2.1.4
+- Updated dependency sirbrillig/phpcs-variable-analysis to 2.11.16
+- Increased minimum_supported_wp_version to 6.0
+
+### Removed
+
+- Removed dependency automattic/phpcs-neutron-ruleset (but migrated some of the rules to our config)
+
 ## [2.1.0] - 2022-07-28
 
 ### Changed
