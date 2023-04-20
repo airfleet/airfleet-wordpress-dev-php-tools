@@ -1,0 +1,26 @@
+{
+  "name": "@airfleet/wordpress-dev-php",
+  "version": "2.1.0",
+  "description": "Tools and configs for WordPress development.",
+  "scripts": {},
+  "private": true,
+  "keywords": [
+    "airfleet"
+  ],
+  "homepage": "https://www.airfleet.co",
+  "author": {
+    "name": "Airfleet",
+    "email": "dev@airfleet.co",
+    "url": "https://www.airfleet.co/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airfleet/airfleet-wordpress-dev-php-tools.git"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/airfleet/airfleet-wordpress-dev-php-tools/issues"
+  }
+}
