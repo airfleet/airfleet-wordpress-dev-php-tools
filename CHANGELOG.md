@@ -10,7 +10,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 - Exclude vendor-scoped and relative wp-content folders from phpcs
-- Set cache file in phpcs config
 
 ## [3.0.0] - 2023-04-20
 

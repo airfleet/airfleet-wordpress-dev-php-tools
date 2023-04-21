@@ -26,9 +26,6 @@
   <!-- Set report width -->
   <arg name="report-width" value="120"/>
 
-  <!-- Set cache file -->
-  <arg name="cache" value=".phpcscache" />
-
   <!-- Exclude WP Core folders and files from being checked. -->
   <exclude-pattern>/docroot/wp-admin/*</exclude-pattern>
   <exclude-pattern>/docroot/wp-includes/*</exclude-pattern>
