@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Exclude vendor-scoped and relative wp-content folders from phpcs
+
 ## [3.0.0] - 2023-04-20
 
 ### Added 
