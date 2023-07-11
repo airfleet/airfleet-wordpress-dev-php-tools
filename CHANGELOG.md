@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Bump phpcsstandards/phpcsutils to 1.0.7
+
 ## [3.0.1] - 2023-04-21
 
 ### Fixed
