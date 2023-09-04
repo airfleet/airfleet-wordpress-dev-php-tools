@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.1.0] - 2023-09-04
+
 ### Changed
 
 - Disabled rule VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable for views/*.php template files (Controller and Setup classes not affected)
@@ -82,7 +84,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add phpcs and config
 
 
-[unreleased]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/3.0.3...main
+[unreleased]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/3.1.0...main
 [2.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/2.0.1...2.1.0
 [2.0.1]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/1.0.0...2.0.0
@@ -96,3 +98,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [3.0.2]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.2
 
 [3.0.3]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.3
+
+[3.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.1.0
