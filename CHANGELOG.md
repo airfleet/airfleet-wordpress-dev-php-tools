@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Disabled rule VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable for views/*.php template files (Controller and Setup classes not affected)
+
 ## [3.0.3] - 2023-07-24
 
 ### Fixed

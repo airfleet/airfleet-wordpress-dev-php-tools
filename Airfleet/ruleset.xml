@@ -224,4 +224,11 @@
     <severity>0</severity>
   </rule>
 
+  <!-- Exclusions for template files -->
+  <rule ref="VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable">
+    <exclude-pattern>views/*</exclude-pattern>
+    <include-pattern>views/*Controller.php</include-pattern>
+    <include-pattern>views/*Setup.php</include-pattern>
+  </rule>
+
 </ruleset>
