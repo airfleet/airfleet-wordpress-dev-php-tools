@@ -7,11 +7,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Bump squizlabs/php_codesniffer to 3.8.0
+- Bump wp-coding-standards/wpcs to 3.0.1
+- Bump sirbrillig/phpcs-variable-analysis to 2.11.17
+- Bump phpcsstandards/phpcsutils to 1.0.9
+
+### Fixed
+
+- Fixed version incompatibility between direct `php_codesniffer` dependency and `php_codesniffer` included by `wpcs`
+
 ## [3.1.0] - 2023-09-04
 
 ### Changed
 
-- Disabled rule VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable for views/*.php template files (Controller and Setup classes not affected)
+- Disabled rule VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable for views/\*.php template files (Controller and Setup classes not affected)
 
 ## [3.0.3] - 2023-07-24
 
@@ -33,7 +44,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [3.0.0] - 2023-04-20
 
-### Added 
+### Added
 
 - Added dependency phpcsstandards/phpcsutils (without it, phpcs errors out)
 
@@ -83,20 +94,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Create package
 - Add phpcs and config
 
-
 [unreleased]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/3.1.0...main
 [2.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/2.0.1...2.1.0
 [2.0.1]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/0.1.0...1.0.0
 [0.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/null...0.1.0
-
 [3.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.0
-
 [3.0.1]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.1
-
 [3.0.2]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.2
-
 [3.0.3]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.3
-
 [3.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.1.0

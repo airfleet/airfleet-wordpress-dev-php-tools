@@ -10,13 +10,13 @@
   ],
   "require": {
     "php": ">=7.4",
-    "squizlabs/php_codesniffer": "3.7.2",
+    "squizlabs/php_codesniffer": "3.8.0",
     "dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
-    "wp-coding-standards/wpcs": "dev-develop",
+    "wp-coding-standards/wpcs": "3.0.1",
     "phpcompatibility/php-compatibility": "9.3.5",
     "phpcompatibility/phpcompatibility-wp": "2.1.4",
-    "sirbrillig/phpcs-variable-analysis": "2.11.16",
-    "phpcsstandards/phpcsutils": "1.0.8"
+    "sirbrillig/phpcs-variable-analysis": "2.11.17",
+    "phpcsstandards/phpcsutils": "1.0.9"
   },
   "extra": {
     "phpcodesniffer-search-depth": 5
