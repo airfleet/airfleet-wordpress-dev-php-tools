@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Added php-parallel-lint
+
+### Changed
+
+- Updated default test version to 8.4
+
 ## [3.2.0] - 2023-12-27
 
 ### Changed
@@ -107,5 +115,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [3.0.2]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.2
 [3.0.3]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.3
 [3.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.1.0
-
 [3.2.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.2.0
