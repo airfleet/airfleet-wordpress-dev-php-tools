@@ -90,7 +90,7 @@
     For more information, also see:
     https://github.com/PHPCompatibility/PHPCompatibility
 	-->
-  <config name="testVersion" value="8.4-"/>
+  <config name="testVersion" value="8.2-"/>
 
   <rule ref="PHPCompatibilityWP">
     <include-pattern>*\.php$</include-pattern>

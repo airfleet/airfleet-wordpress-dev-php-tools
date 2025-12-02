@@ -14,7 +14,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 - Increased minimum_supported_wp_version to 6.8
-- Updated default test version to 8.4
 - Bump `squizlabs/php_codesniffer` to `3.13.5`
 - Bump `dealerdirect/phpcodesniffer-composer-installer` to `1.2.0`
 - Bump `wp-coding-standards/wpcs` to `3.2.0`
