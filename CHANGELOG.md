@@ -16,11 +16,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Increased minimum_supported_wp_version to 6.8
 - Bump `squizlabs/php_codesniffer` to `3.13.5`
 - Bump `dealerdirect/phpcodesniffer-composer-installer` to `1.2.0`
-- Bump `wp-coding-standards/wpcs` to `3.2.0`
+- Bump `wp-coding-standards/wpcs` to `3.3.0`
 - Bump `phpcompatibility/php-compatibility` to `^10.0.0@dev`
 - Bump `phpcompatibility/phpcompatibility-wp` to `^3.0.0@dev`
 - Bump `sirbrillig/phpcs-variable-analysis` to `2.13.0`
-- Bump `phpcsstandards/phpcsutils` to `1.2.1`
+- Bump `phpcsstandards/phpcsutils` to `1.2.2`
 
 ## [3.2.0] - 2023-12-27
 
