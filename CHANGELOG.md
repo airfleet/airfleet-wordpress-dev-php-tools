@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Added `php-parallel-lint/php-parallel-lint` and `php-parallel-lint/php-console-highlighter`
+
+### Changed
+
+- Updated default PHP test version to `8.2-` (>= 8.2)
+- Increased minimum_supported_wp_version to 6.8
+- Bump `squizlabs/php_codesniffer` to `3.13.5`
+- Bump `dealerdirect/phpcodesniffer-composer-installer` to `1.2.0`
+- Bump `wp-coding-standards/wpcs` to `3.3.0`
+- Bump `phpcompatibility/php-compatibility` to `^10.0.0@dev`
+- Bump `phpcompatibility/phpcompatibility-wp` to `^3.0.0@dev`
+- Bump `sirbrillig/phpcs-variable-analysis` to `2.13.0`
+- Bump `phpcsstandards/phpcsutils` to `1.2.2`
+
 ## [3.2.0] - 2023-12-27
 
 ### Changed
@@ -107,5 +123,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [3.0.2]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.2
 [3.0.3]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.3
 [3.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.1.0
-
 [3.2.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.2.0

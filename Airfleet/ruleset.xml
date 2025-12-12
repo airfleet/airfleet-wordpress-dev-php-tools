@@ -90,7 +90,7 @@
     For more information, also see:
     https://github.com/PHPCompatibility/PHPCompatibility
 	-->
-  <config name="testVersion" value="8.1-"/>
+  <config name="testVersion" value="8.2-"/>
 
   <rule ref="PHPCompatibilityWP">
     <include-pattern>*\.php$</include-pattern>
@@ -104,7 +104,7 @@
 	the wiki:
 	https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
 	-->
-  <config name="minimum_supported_wp_version" value="6.0"/>
+  <config name="minimum_supported_wp_version" value="6.8"/>
 
   <rule ref="WordPress.WP.I18n">
     <properties>
