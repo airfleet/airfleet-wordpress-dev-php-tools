@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Exclude `patterns` folder for rule Internal.NoCodeFound
+
 ## [4.0.0] - 2025-12-12
 
 ### Added
@@ -126,5 +130,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [3.0.3]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.0.3
 [3.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.1.0
 [3.2.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.2.0
-
 [4.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/4.0.0
