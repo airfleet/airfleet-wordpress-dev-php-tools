@@ -50,6 +50,7 @@
   <!-- Custom exclude. -->
   <exclude-pattern>/assets/*</exclude-pattern>
   <exclude-pattern>/dist/*</exclude-pattern>
+  <exclude-pattern>/build/*</exclude-pattern>
   <exclude-pattern>/.parcel-cache/*</exclude-pattern>
   <exclude-pattern>/.husky/*</exclude-pattern>
   <exclude-pattern>*/*.css</exclude-pattern>

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Exclude `build/` folder from phpcs
+
 ## [4.0.1] - 2026-01-01
 
 ### Fixed
@@ -133,5 +137,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [3.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.1.0
 [3.2.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/3.2.0
 [4.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/4.0.0
-
 [4.0.1]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/4.0.1
