@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Add a `Test PHP` workflow that verifies the Airfleet standard registers and passes on a conforming fixture, across PHP 8.2–8.5. This repository previously had no CI step that installed dependencies or loaded the ruleset ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
+
+### Changed
+
+- Add `license: proprietary` to `composer.json` ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
+- Keep `phpcompatibility/*` on the 10.0/3.0 alphas. No stable release supports PHPCS 4, and the latest stables (9.3.5 / 2.1.8) would drop PHPCS 4 readiness ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
+- Raise the PHP floor from `>=7.4` to `>=8.2`, matching the `testVersion 8.2-` the shipped ruleset already enforces ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
+- Bump the PHPCS stack: `squizlabs/php_codesniffer` 3.13.5 → 3.13.6, `wp-coding-standards/wpcs` 3.3.0 → 3.4.1, `phpcsstandards/phpcsutils` 1.2.2 → 1.2.3, `sirbrillig/phpcs-variable-analysis` 2.13.0 → 3.0.0, `dealerdirect/phpcodesniffer-composer-installer` 1.2.0 → 1.2.1 ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
+
 ## [4.0.2] - 2026-02-25
 
 ### Fixed

@@ -1,0 +1,53 @@
+# This repository ships a PHPCS standard consumed by ~88 repositories, but
+# until now nothing in CI ever ran `composer install` or loaded the ruleset.
+# A typo in Airfleet/ruleset.xml or an incompatible dependency bump would
+# reach Packagist and break every consumer before anyone noticed.
+#
+# This workflow is that gate. It proves the standard both LOADS (`phpcs -i`
+# lists Airfleet) and PASSES (tests/fixture.php is clean), across every PHP
+# version the standard claims to support.
+#
+# `composer validate` runs without `--strict`: this package deliberately pins
+# every sniff dependency to an exact version so all consumers resolve
+# identical rules, and --strict treats exact constraints as warnings-as-errors.
+name: 🧪 Test PHP
+
+on:
+  pull_request:
+    branches: ["main", "release/**"]
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  test-php:
+    runs-on: ${{ vars.CI_RUNNER_LIGHT || 'ubuntu-latest' }}
+    permissions:
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions: ["8.2", "8.3", "8.4", "8.5"]
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v6
+
+      - name: ⚙️ Setup PHP ${{ matrix.php-versions }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          coverage: none
+
+      - name: 🔬 Validate composer.json
+        run: composer validate
+
+      - name: 🔨 Install dependencies
+        run: composer install --prefer-dist --no-ansi --no-interaction --no-progress
+
+      - name: 🔬 Check the Airfleet standard is registered
+        run: vendor/bin/phpcs -i | grep -q 'Airfleet'
+
+      - name: 🔬 Check the Airfleet standard passes on conforming code
+        run: vendor/bin/phpcs --standard=Airfleet --no-cache tests/fixture.php
