@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Run all workflows on the shared CI runner variables (`CI_RUNNER_LIGHT` / `CI_RUNNER_STANDARD`) instead of a hardcoded `ubuntu-latest`, matching the rest of the fleet ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1214572624485377))
 - Add `license: proprietary` to `composer.json` ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
 - Keep `phpcompatibility/*` on the 10.0/3.0 alphas. No stable release supports PHPCS 4, and the latest stables (9.3.5 / 2.1.8) would drop PHPCS 4 readiness ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
 - Raise the PHP floor from `>=7.4` to `>=8.2`, matching the `testVersion 8.2-` the shipped ruleset already enforces ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))

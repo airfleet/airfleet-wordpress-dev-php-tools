@@ -6,7 +6,7 @@ on:
 
 jobs:
   create-asana-attachment-job:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.CI_RUNNER_LIGHT || 'ubuntu-latest' }}
     timeout-minutes: 1
     name: Create pull request attachments on Asana tasks
     steps:
