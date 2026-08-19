@@ -47,7 +47,9 @@ jobs:
         run: composer install --prefer-dist --no-ansi --no-interaction --no-progress
 
       - name: 🔬 Check the Airfleet standard is registered
-        run: vendor/bin/phpcs -i | grep -q 'Airfleet'
+        # Anchored on the separators phpcs uses between standard names, so the step
+        # cannot pass on a substring match such as `AirfleetExtra`.
+        run: vendor/bin/phpcs -i | grep -qE '(^|[ ,])Airfleet([ ,]|$)'
 
       - name: 🔬 Check the Airfleet standard passes on conforming code
         run: vendor/bin/phpcs --standard=Airfleet --no-cache tests/fixture.php
