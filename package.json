@@ -1,6 +1,6 @@
 {
   "name": "@airfleet/wordpress-dev-php",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "Tools and configs for WordPress development.",
   "scripts": {},
   "private": true,

@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [4.1.0] - 2026-08-24
+
 ### Added
 
 - Add a `Test PHP` workflow that verifies the Airfleet standard registers and passes on a conforming fixture, across PHP 8.2–8.5. This repository previously had no CI step that installed dependencies or loaded the ruleset ([Asana](https://app.asana.com/1/454309279916576/project/1203834063906228/task/1212639121694684))
@@ -138,7 +140,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Create package
 - Add phpcs and config
 
-[unreleased]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/4.0.2...main
+[Unreleased]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/4.1.0...main
 [2.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/2.0.1...2.1.0
 [2.0.1]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/1.0.0...2.0.0
@@ -153,4 +155,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [4.0.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/4.0.0
 [4.0.1]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/4.0.1
 
+[4.1.0]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/compare/4.0.2...4.1.0
 [4.0.2]: https://github.com/airfleet/airfleet-wordpress-dev-php-tools/releases/tag/4.0.2
