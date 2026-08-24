@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-release:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.CI_RUNNER_LIGHT || 'ubuntu-latest' }}
     permissions:
       contents: read
 
